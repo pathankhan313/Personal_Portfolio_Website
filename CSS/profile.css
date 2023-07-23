@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@600&display=swap');
+
+:root{
+    --primary-color: #a429c9;
+}
+
+#profile {
+    font-family: 'Noto Sans', sans-serif;
+    background-color: #191919;
+    color: white;
+    font-size:20px;
+    /* font-family:"Houschka Pro Medium" !important;
+    font-style:normal;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: 0.2px;
+    -moz-osx-font-smoothing: grayscale; */
+}
+
+#profile h1 {
+    text-align: center;
+    padding: 3px 0;
+    color: var(--primary-color);
+}
+
+.profile-content {
+    display: flex;
+    justify-content: space-between;
+    height: 100vh;
+    gap: 1rem;
+    align-items: center;
+    /* border: 3px solid black ; */
+}
+
+.profile-info {
+    /* border: 2px solid green; */
+    width: 30%;
+    padding: 0 10px;
+}
+
+.profile-info h2 {
+    font-size: xx-large;
+    color: var(--primary-color);
+}
+
+.profile-img {
+    /* border: 2px solid blue; */
+    width: 40%;
+    text-align: center;
+    cursor: pointer;
+}
+
+.profile-img img {
+    height: 23vh;
+    clip-path: circle(42.4% at 50% 50%);
+}
+
+.profile-right {
+    display: flex;
+    flex-direction: column;
+    /* border: 2px solid blue; */
+    width: 30%;
+    margin: 10px 0;
+    padding: 5px 15px;
+    /* text-align: center; */
+}
+
+.profile-box{
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+
+svg{
+    width: 16px;
+    cursor: pointer;
+    fill: white;
+}
+
+.card {
+    color: var(--primary-color);
+    font-size: 1.3rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.card-items {
+    font-size: 1.1rem;
+}

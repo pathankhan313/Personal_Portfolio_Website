@@ -1,0 +1,302 @@
+@media screen and (max-width:1450px) {
+    #blog {
+        flex-direction: column;
+        height: 150vh;
+    }
+
+    .blog-items {
+        border-radius: 123% 31% 71% 29% / 22% 73% 27% 72%;
+    }
+
+    .name {
+        padding: 5rem;
+    }
+}
+
+@media screen and (max-width:1150px) {
+    #home {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width:865px) {
+    .profile img {
+        height: 45vh;
+    }
+
+    #MyInfo {
+        flex-direction: column;
+    }
+
+    .about-me-img img {
+        display: none;
+    }
+
+    .profile-content {
+        flex-direction: column;
+    }
+
+    #blog{
+        height: 200vh;
+    }
+}
+
+@media screen and (max-width:710px) {
+    .container {
+        flex-direction: column;
+        height: 7rem;
+    }
+    
+    .profile-img {
+        width: 50%;
+    }
+    
+    .profile-right {
+        width: 50%;
+    }
+    
+    .profile-info {
+        width: 50%;
+    }
+    
+    .profile-info h2 {
+        font-size: large;
+    }
+    
+    #profile h1 {
+        font-size: x-large;
+    }
+}
+
+@media screen and (max-width:590px) {
+    .list-items li a {
+        font-size: 1rem;
+    }
+
+    .list-items {
+        margin: 0 8px;
+    }
+}
+
+@media screen and (max-width:535px) {
+    #home h1 {
+        font-size: 2rem;
+    }
+
+    #home h2 {
+        font-size: 1rem;
+    }
+
+    .Info p {
+        font-size: 0.7rem;
+    }
+
+    .profile img {
+        height: 30vh;
+    }
+
+    #home {
+        justify-content: space-evenly;
+    }
+
+    .profile-img {
+        width: 70%;
+    }
+
+    .profile-img img {
+        height: 20vh;
+    }
+
+    .profile-right {
+        width: 70%;
+    }
+
+    .profile-info {
+        width: 70%;
+    }
+
+}
+
+@media screen and (max-width:490px) {
+    .list-items {
+        flex-direction: column;
+        align-items: center;
+        transition: all .2s ease-in;
+    }
+
+    .list-items li {
+        margin: 5px;
+    }
+
+    .list-items li a {
+        padding: 3px 5px;
+    }
+
+    .container {
+        align-items: center;
+        justify-content: center;
+        transition: all .2s ease-in;
+        height: 12rem;
+    }
+
+    .logo{
+        transition: all .1s ease-in;
+    }
+    
+    .line{
+        transition: all .2s ease-in;
+    }
+    
+    .h-resp{
+        height: 3.2rem; 
+    }
+
+    #home{
+        height: 70vh;
+        justify-content: center;
+        gap: .5rem;
+    }
+
+    .v-hidden-resp{
+        opacity: 0;
+    }
+
+    .burger{
+        display: block;
+    }
+
+    #form-container {
+        height: 90vh;
+    }
+
+    .about-me p {
+        padding: 3px 35px;
+    }
+
+    #blog{
+        height: 250vh;
+    }
+
+    .blog-items{
+        height: 80vh;
+        border-radius: 10px;
+    }
+
+}
+
+@media screen and (max-width:435px) {
+    .about-me p {
+        font-size: 0.9rem;
+        padding: 3px 10px;
+    }
+
+    .about-me h1 {
+        font-size: 1.3rem;
+    }
+
+    .form input {
+        width: 40vw;
+        font-size: 0.7rem;
+    }
+
+    #tarea {
+        width: 40.6vw;
+        font-size: 0.7rem;
+    }
+
+    .profile img {
+        height: 23vh;
+    }
+
+    .details h1 {
+        font-size: 1.3rem;
+    }
+
+    .myinfo-items img {
+        height: 125px;
+        width: 180px;
+    }
+
+    .myinfo-items p {
+        font-size: 0.8rem;
+    }
+
+    .myinfo-items h3 {
+        font-size: 1.2rem;
+    }
+
+    .btn {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .btn button {
+        margin: 5px 0;
+        font-size: 0.7rem;
+    }
+
+    #about {
+        height: 100vh;
+    }
+
+    #blog{
+        height: 300vh;
+    }
+
+    .blog-items{
+        height: 90vh;
+    }
+
+    .blog-items p{
+        padding-left: 1rem;
+    }
+}
+
+@media screen and (max-width:325px) {
+    .form input {
+        width: 65vw;
+    }
+
+    #tarea {
+        width: 65.6vw;
+    }
+
+    #personal {
+        font-size: 1.7rem;
+    }
+
+    .profile-info {
+        width: 100%;
+    }
+
+    .profile-img {
+        width: 100%;
+    }
+
+    .profile-right {
+        width: 100%;
+    }
+
+    .blog-items p{
+        padding-left: .1rem;
+    }
+
+    .expertise, .phone{
+        transform: translateX(-5px);
+    }
+
+    .name{
+        padding: 2rem;
+    }
+}
+
+@media screen and (max-width:240px) {
+    .myinfo-items img {
+        height: 100px;
+        width: 150px;
+    }
+
+    .about-me p {
+        padding: 3px 5px;
+    }
+}

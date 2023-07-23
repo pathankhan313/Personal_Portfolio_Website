@@ -1,0 +1,417 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@600&family=Roboto:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@500&display=swap');
+
+/* @import url(//db.onlinewebfonts.com/c/225646b777438f81ec8400ff378afe2d?family=Houschka+Pro+Medium); */
+
+:root {
+    --primary-color: white;
+    --bg-color: linear-gradient(to right, #0f0c29, #302b63, #24243e);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+    width: 1rem;
+}
+
+::-webkit-scrollbar-thumb {
+    background-image: linear-gradient(to bottom, #0f0c29, #302b63);
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #100e25;
+}
+
+/* #loading {
+    min-height: 100vh;
+    max-height: 100vh;
+    max-width: 100%;
+    min-width: 100%;
+    position: fixed;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    z-index: 11;
+} */
+
+/* Navigation Bar */
+
+.container {
+    display: flex;
+    background: var(--bg-color);
+    /* position: absolute; */
+    position: sticky;
+    width: 100%;
+    height: 4rem;
+    justify-content: flex-start;
+    align-items: center;
+    /* font-family: "Houschka Pro Medium" !important;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: 0.2px;
+    -moz-osx-font-smoothing: grayscale; */
+    top: 0;
+    font-family: 'DM Sans', sans-serif;
+    z-index: 1;
+    transition: .1s;
+}
+
+/* .container.active{
+    transition: 1.5s;
+    background: var(--bg-color);
+    position: sticky;
+    top: 0;
+} */
+
+.v-hidden-resp {
+    display: flex;
+}
+
+.logo {
+    margin: 8px;
+    font-size: 1.3rem;
+}
+
+.logo h2 {
+    padding: 5px;
+    color: cadetblue;
+    cursor: pointer;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.list-items {
+    display: flex;
+    margin: 5px 15px;
+}
+
+.list-items li .home-link {
+    color: blue;
+}
+
+.list-items li {
+    list-style: none;
+    margin-right: 2rem;
+}
+
+.list-items li a {
+    text-decoration: none;
+    color: var(--primary-color);
+    font-size: 1.3rem;
+    font-weight: 500;
+    padding: 5px 8px;
+    border-radius: 10px;
+    position: relative;
+}
+
+.list-items li a::after {
+    content: '';
+    transition: all .5s ease;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    height: 2px;
+    width: 0;
+    background-color: #fff;
+}
+
+.list-items li a:hover::after {
+    width: 100%;
+    background-color: var(--primary-color);
+    left: 0;
+    bottom: 0;
+    border-radius: 5px;
+}
+
+.list-items li .home-link:hover::after {
+    background-color: blue;
+}
+
+.burger {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    display: none;
+}
+
+.line {
+    height: .2rem;
+    width: 27px;
+    margin: 5px 3px;
+    background-color: white;
+}
+
+
+/* Home Section */
+
+#home {
+    display: flex;
+    height: 100vh;
+    justify-content: space-around;
+    align-items: center;
+    /* background: linear-gradient(to right, #8360c3, #2ebf91); */
+    background: var(--bg-color);
+    font-family: 'DM Sans', sans-serif;
+    font-size: 16px;
+    /* font-family: "Houschka Pro Medium" !important;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: 0.2px;
+    -moz-osx-font-smoothing: grayscale; */
+}
+
+#home h1 {
+    font-size: 3rem;
+}
+
+#home h2 {
+    font-size: 2rem;
+}
+
+.Info p {
+    width: 75%;
+    font-size: 1.2rem;
+    color: var(--primary-color);
+}
+
+.Info h1, .Info h2 {
+    font-weight: 500;
+}
+
+.hi {
+    color: blue;
+    letter-spacing: .15rem;
+}
+
+.profile img {
+    height: 60vh;
+    cursor: pointer;
+}
+
+/* Info Section */
+
+#MyInfo {
+    display: flex;
+    font-family: 'Roboto', sans-serif;
+    background-color: #0e0e0e;
+}
+
+.details {
+    /* margin-top: 10px; */
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    background-color: #0e0e0e;
+    color: var(--primary-color);
+    padding: 10px 0;
+}
+
+.myinfo-items {
+    /* border: 2px solid black; */
+    border-radius: 20px;
+    background-color: #191919;
+    color: var(--primary-color);
+    margin: 5px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+    /* box-shadow: 2px 2px 6px 2px #2a2828; */
+    transition: all .5s;
+}
+
+.myinfo-items:hover {
+    box-shadow: 5px 5px 5px 4px #2a2828, inset 5px 5px 5px 4px #2a2828;
+    transform: scale(.90);
+}
+
+.myinfo-items h3,
+.myinfo-items p {
+    text-align: center;
+    padding: 2px 5px;
+    font-weight: 500;
+}
+
+.myinfo-items p {
+    font-size: 1rem;
+    margin-bottom: 35px;
+}
+
+.myinfo-items h3 {
+    font-size: 1.5rem;
+}
+
+.myinfo-items img {
+    height: 150px;
+    width: 230px;
+    cursor: pointer;
+    border-radius: 15px;
+    margin: 20px 0;
+}
+
+#form-container {
+    display: flex;
+    /* border: 3px solid black; */
+    flex-direction: column;
+    height: 80vh;
+    position: relative;
+    /* margin-top: 10px; */
+    align-items: center;
+    font-family: 'DM Sans', sans-serif;
+}
+
+#form-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    filter: brightness(70%);
+    background: url("../man-with-laptop.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: -1;
+}
+
+#personal {
+    color: var(--primary-color);
+}
+
+.form {
+    margin: 10px 0;
+    font-weight: bold;
+}
+
+.form input {
+    font-size: 1.1rem;
+    font-weight: bold;
+    padding: 3px 5px;
+    background: transparent;
+    width: 45vw;
+    color: var(--primary-color);
+}
+
+#tarea {
+    font-size: 1.1rem;
+    background: transparent;
+    width: 45.1vw;
+    font-family: 'DM Sans', sans-serif;
+    color: var(--primary-color);
+}
+
+.btn button {
+    margin: 0 10px;
+    padding: 3px 6px;
+    font-weight: bold;
+    font-size: 1rem;
+    background: transparent;
+    color: var(--primary-color);
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background .5s ease-in-out;
+}
+
+.btn button:hover {
+    background-color: var(--primary-color);
+    color: black;
+}
+
+/* About Section */
+
+#about {
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: space-evenly;
+    /* border: 2px solid green; */
+    /* margin: 10px 10px; */
+    font-family: 'Roboto', sans-serif;
+    color: var(--primary-color);
+    background: linear-gradient(to right, #434343 0%, black 100%);
+    /* font-family: "Houschka Pro Medium" !important;
+    font-size: 16px;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: 0.2px;
+    -moz-osx-font-smoothing: grayscale; */
+}
+
+.about-me-img img {
+    height: 50vh;
+    margin-left: 2rem;
+    cursor: pointer;
+}
+
+.about-me {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+.about-me p {
+    font-size: 1.1rem;
+    /* border: 2px solid black; */
+    padding: 3px 70px;
+    text-align: left;
+}
+
+.about-me h1 {
+    font-size: 2rem;
+}
+
+.contact {
+    display: flex;
+    gap: 5px;
+    width: 100%;
+    justify-content: right;
+    margin-right: 5vw;
+}
+
+.contact a svg {
+    width: 3rem;
+    fill: #1da1f2;
+    margin: 10px 5px;
+    padding: 10px;
+}
+
+#resume {
+    margin: 1rem 0;
+    /* padding: 0 .5rem;
+    padding-top: .7rem; */
+    border-radius: 3px;
+    border: 2px solid black;
+}
+
+#resume a {
+    text-decoration: none;
+    color: white;
+    padding: 1.5rem .2rem;
+}
+
+.contact a svg:hover {
+    fill: var(--primary-color);
+}
+
+.contact .whatsapp {
+    fill: green;
+}
+
+.contact .instagram {
+    /* background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text; */
+    fill: #fa0263;
+}

@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@600&display=swap');
+
+:root{
+    --main-color: #a429c9;
+}
+
+.name {
+    text-align: center;
+    font-family: 'Noto sans', sans-serif;
+    padding: 4rem;
+    background-color: #1a1919;
+    color: white;
+}
+
+#blog {
+    display: flex;
+    height: 100vh;
+    align-items: flex-start;
+    justify-content: space-around;
+    font-family: 'Noto sans', sans-serif;
+    background: #1a1919;
+    color: white;
+}
+
+.blog-items {
+    display: flex;
+    border: 3px solid var(--main-color);
+    border-radius: 100% 60% 58% 41% / 0% 88% 0% 72%;
+    margin: 10px 2rem;
+    padding: 0 1rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+}
+
+.blog-items .team-name {
+    color: var(--main-color);
+    font-size: 1.2rem;
+}
+
+.blog-items p {
+    text-align: left;
+    padding-left: 3rem;
+}
+
+.blog-items .image {
+    width: 90px;
+    height: 94px;
+}
+
+.blog-items img {
+    height: 100px;
+    border-radius: 50%;
+}
+
+.blog-items img:hover {
+    cursor: pointer;
+}
+
+.social-icon a svg:hover {
+    transform: translateY(-5px);
+}
+
+.social-icon a{
+    text-decoration: none;
+}
+
+.social-icon a svg {
+    width: 1.7rem;
+    padding: 5px 2px;
+    transition: all .3s ease-in-out;
+}
+
+.twitter{
+    fill: #1da1f2;
+}
+
+.whatsapp {
+    fill: green;
+    transition: all .3s ease-in-out;
+}
+
+.instagram {
+    fill: #fa0263;
+}
+
+.fa-twitter{
+    color: blue;
+}
+
+.phone {
+    margin-top: 5px;
+    transform: translateX(-25px);
+    cursor: pointer;
+}
+
+.expertise {
+    transform: translateX(-25px);
+    cursor: pointer;
+}
+
+.expertise .expertise-item {
+    color: var(--main-color);
+}
+
+.phone .phone-item {
+    color: var(--main-color);
+}
